@@ -1,0 +1,25 @@
+-test.shuffle 1759131511962239961
+RPS=10000
+ObjectsPerReq=100
+
+Sizeof Optimized: 96
+Sizeof NonOptimized: 120
+goos: linux
+goarch: amd64
+pkg: padding
+cpu: AMD Ryzen 9 3900X 12-Core Processor            
+BenchmarkAllocOptimized/Optimized-24         	     644	  15794981 ns/op	97280572 B/op	   10005 allocs/op
+BenchmarkAllocOptimized/Optimized-24         	     752	  19146676 ns/op	97280633 B/op	   10006 allocs/op
+BenchmarkAllocOptimized/Optimized-24         	     711	  15829548 ns/op	97280499 B/op	   10005 allocs/op
+BenchmarkAllocOptimized/Optimized-24         	     778	  16315961 ns/op	97280516 B/op	   10005 allocs/op
+BenchmarkAllocOptimized/Optimized-24         	     748	  16852108 ns/op	97280538 B/op	   10005 allocs/op
+BenchmarkAllocOptimized/Optimized-24         	     738	  16719909 ns/op	97280517 B/op	   10005 allocs/op
+BenchmarkAllocOptimized/Optimized-24         	     705	  16697467 ns/op	97280532 B/op	   10005 allocs/op
+BenchmarkAllocOptimized/Optimized-24         	     710	  15887555 ns/op	97280461 B/op	   10004 allocs/op
+BenchmarkAllocOptimized/Optimized-24         	     753	  16795352 ns/op	97280490 B/op	   10005 allocs/op
+BenchmarkAllocOptimized/Optimized-24         	     711	  16858356 ns/op	97280525 B/op	   10005 allocs/op
+HeapAlloc = 3358 KB
+TotalAlloc = 67545364 KB
+NumGC = 15344
+PASS
+ok  	padding	147.909s

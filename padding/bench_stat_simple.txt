@@ -1,0 +1,27 @@
+goos: linux
+goarch: amd64
+pkg: padding
+cpu: AMD Ryzen 9 3900X 12-Core Processor            
+                                  │ BenchmarkAllocOptimized.txt │ BenchmarkAllocNonOptimized.txt │
+                                  │           sec/op            │         sec/op           vs base   │
+AllocOptimized/Optimized-24                         26.02m ± 0%
+AllocNonOptimized/NonOptimized-24                                             34.27m ± 1%
+geomean                                             26.02m                    34.27m       ? ¹ ²
+¹ benchmark set differs from baseline; geomeans may not be comparable
+² ratios must be >0 to compute geomean
+
+                                  │ BenchmarkAllocOptimized.txt │ BenchmarkAllocNonOptimized.txt │
+                                  │            B/op             │          B/op            vs base   │
+AllocOptimized/Optimized-24                        92.77Mi ± 0%
+AllocNonOptimized/NonOptimized-24                                            117.2Mi ± 0%
+geomean                                            92.77Mi                   117.2Mi       ? ¹ ²
+¹ benchmark set differs from baseline; geomeans may not be comparable
+² ratios must be >0 to compute geomean
+
+                                  │ BenchmarkAllocOptimized.txt │ BenchmarkAllocNonOptimized.txt │
+                                  │          allocs/op          │        allocs/op         vs base   │
+AllocOptimized/Optimized-24                         10.01k ± 0%
+AllocNonOptimized/NonOptimized-24                                             10.01k ± 0%
+geomean                                             10.01k                    10.01k       ? ¹ ²
+¹ benchmark set differs from baseline; geomeans may not be comparable
+² ratios must be >0 to compute geomean
